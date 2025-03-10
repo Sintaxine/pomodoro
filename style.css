@@ -47,9 +47,37 @@
     text-align: center;
 }
 .dark-mode{
-    background-color:  	#383b3e;
+    background-color:  	#000000;
     color: white;
 }
+
+
+
+
+.github-icon {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+.github-icon img {
+  width: 85px;
+  height: 85px;
+  opacity: 0.7;
+  transition: opacity 0.5s;
+  filter: invert(0);
+}
+
+.github-icon img:hover {
+  opacity: 1;
+}
+
+body.dark-mode .github-icon img {
+  filter: invert(1); /* Invert colors in dark mode */
+}
+
+
 .dark-btn {
     background-color: white !important;
     color: black !important;

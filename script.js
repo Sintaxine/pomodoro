@@ -82,12 +82,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function togglePause() {
         isPaused = !isPaused;
+        startPauseBtn.textContent = isPaused ? "Start" : "Pause";
         if (!isPaused) {
             if (!interval) {
                 startTimer();
             }
         }
     }
+    
 
     function switchMode() {
         if (mode === "Pomodoro") {
