@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="settings">
+        <button class="button-40" id="darkmode">Toggle Dark Mode</button>
+        <button class="button-40" id="togglesound">Toggle Bell On Finish</button>
+    </div>
+    <div id="maindiv">
+        <h1 id="title">Pomodoro Timer</h1>
+        <h2>Current mode: <span id="mode" style="color:red">Pomodoro</span></h2>
+        <h2 id="timer">25:00</h2>
+        <div id="buttoncontainer">        
+            <button class="button-40" id="startpause">Pause / Start</button>
+            <button class="button-40"id="modeselector">Mode</button>
+            <button class="button-40" id="custom">Custom Timer</button>
+        </div>
+
+    </div>
+    <div id="popup">
+        <input id="customtime">
+        <button class="button-40" id="submittime" style="margin-top:50px">Submit</button>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
